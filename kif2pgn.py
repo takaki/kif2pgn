@@ -29,7 +29,7 @@ for i in f:
             next_position = "%d%s" % (zen_map[s[0]], kan_map[s[1]])
         elif s[0] == '同':
             pass
-        elif s[0] == '反' or s[0] == '切':
+        elif s[0] == '反' or s[0] == '切' or s[0] == '投':
             break
         else:
             raise RuntimeError("Unknown Move", s[0])
