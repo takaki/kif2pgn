@@ -54,6 +54,8 @@ for i in f:
         move_list.append("%s%s%s%s" % (piace_name, prev_position,
                                    next_position , promote))
 print('[Variant "Shogi"]')
+if len(move_list) % 2 != 0:
+    move_list.append("")
 move_black = move_list[0::2]
 move_white = move_list[1::2]
 pair = zip(move_black, move_white)
